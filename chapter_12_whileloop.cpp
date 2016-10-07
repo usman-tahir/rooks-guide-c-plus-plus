@@ -7,7 +7,7 @@ int main() {
   cout << "T-minus ";
 
   // while loop is ended when i is less than 0
-  while (i >= 0) {
+  while (i > 0) {
     cout << i << endl;
     i--;
   }
