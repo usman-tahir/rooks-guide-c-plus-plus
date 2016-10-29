@@ -21,12 +21,12 @@ int main() {
           */
 
           if (!(cin >> input_var)) {
-              cout << "You entered a non-numeric input." << endl;
-              break;
-              // Exit the do while loop
+              cout << "You entered a non-numeric input. Please try again." << endl;
+              cin.clear();
+              cin.ignore(10000, '\n');
           }
 
-          if (input_var != -1) {
+          if (input_var > 0) {
               cout << "You entered " << input_var << endl;
           }
      } while (input_var != -1);
