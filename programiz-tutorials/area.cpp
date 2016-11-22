@@ -8,6 +8,10 @@ class Area {
   public:
     // Constructor
     Area(): length(0), width(0) {}
+    Area(int length, int width) {
+      this->length = length;
+      this->width = width;
+    }
 
     void getLength() {
       cout << "\nEnter the length: ";
@@ -27,11 +31,14 @@ class Area {
 };
 
 int main() {
-  Area a, b;
+  Area a, b, c(10, 10);
+
   a.getLength();
   b.getLength();
   int areaA = a.area();
   int areaB = b.area();
+  int areaC = c.area();
   a.displayArea(areaA);
   b.displayArea(areaB);
+  c.displayArea(areaC);
 }
